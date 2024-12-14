@@ -18,17 +18,17 @@ class Test_Extractor(unittest.TestCase):
     
     def setUp(self):
         log_list = {
-            "Data-Ora"        : ["4/11/2024 18:42"],
-            "Utente"          : [1],
-            "Contesto-evento" : [],
-            "Componente"      : [],
-            "Evento"          : ["Visualizzato report log"],
-            "Descrizione"     : [],
-            "Origine"         : [], 
-            "Indirizzo-IP"    : []             
+            "data"        : ["4/11/2024 18:42"],
+            "utente"          : [1],
+            "contesto" : [],
+            "componente"      : [],
+            "evento"          : ["Visualizzato report log"],
+            "descrizione"     : [],
+            "origine"         : [],
+            "indirizzo IP"    : []
             }
         # riempie le liste non inizializzate
-        n_logs = len(log_list["Data-Ora"])
+        n_logs = len(log_list["data"])
         for k in log_list:
             if len(log_list[k]) != n_logs:
                 log_list[k] = [None]*n_logs
